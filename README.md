@@ -16,6 +16,10 @@ gem 'backbone_handlebars'
 
 This will generate the applications structure in the app/assets/javascripts directory and add the precompile option to your production environment.
 
+Your templates will be stored in `Handlebars.templates` and can be accessed by their path + name. eg: You have a template called post.handlebars in `app/assets/javascripts/templates/posts/post.handlebars`. You would access this template with the following: 
+```javascript
+Handlebars.templates['posts/post']
+```
 ## Options
 
 ```ruby
